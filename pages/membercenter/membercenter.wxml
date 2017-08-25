@@ -1,0 +1,35 @@
+<view class='userwrap'>
+    <view class='topwrap'>
+        <image class="slogo" src='/static/img/slogo.png'></image>
+        <view class='info name'>{{userinfo.username}}</view>
+        <view class='info'>{{userinfo.idcard}}</view>
+    </view>
+    <view class='content'>
+        <view class='u-block m-center'>
+            <navigator class='navi' url="/pages/member/member">
+                <image src='/static/img/mcenter.png'></image>
+                <view>
+                    会员中心
+                </view>
+            </navigator>
+        </view>
+        <view class='u-block o-center'>
+            <navigator class='navi' url="/pages/ordercenter/ordercenter">
+                <image src='/static/img/2.png'></image>
+                <view>订单中心</view>
+            </navigator>
+        </view>
+        <view class='u-block location'>
+            <navigator class='navi' bindtap='location'>
+                <image src='/static/img/map.png'></image>
+                <view>酒店位置</view>
+            </navigator>
+        </view>
+        <view class='u-block Contact'>
+            <navigator class='navi' url="/pages/contact/contact">
+                <image src='/static/img/4.png'></image>
+                <view>联系商家</view>
+            </navigator>
+        </view>
+    </view>
+</view>

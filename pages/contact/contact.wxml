@@ -1,0 +1,20 @@
+<view>
+    <view class='logo'>
+        <image class="slogo" src='/static/img/slogo.png'></image>
+    </view>
+    <view class='content'>
+        <view class='row'>
+            <view>酒店地址：</view>
+            <view>合肥市黄山路389号</view>
+        </view>
+        <view class='row'>
+            <view>联系电话：</view>
+            <view class='text'>0551-6578 1111 0551-6578 2222</view>
+        </view>
+    </view>
+    <view class='map'>
+        <view class='map'>
+            <map id='map1' longitude='{{longitude}}' latitude='{{latitude}}' markers="{{markers}}" show-location style="width:100%;height:100%;"  scale='16'></map>
+        </view>
+    </view>
+</view>

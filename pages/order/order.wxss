@@ -1,0 +1,65 @@
+.order-wrap {
+    width: 690rpx;
+    margin: 0 auto;
+}
+.orderList {
+    overflow: hidden;
+    font-size: 28rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    padding: 30rpx 0;
+    border-bottom: 1rpx solid #ccc;
+}
+.orderkey {
+    float: left;
+}
+.ordervalue {
+    float: right;
+    width: 500rpx;
+    overflow-x: scroll;
+    white-space: nowrap;
+    text-align: right;
+}
+.price {
+    color: red;
+    font-weight: bold;
+}
+.bordernone{
+    border:none;
+}
+.tips{
+    margin-top: 40rpx;
+    font-size: 25rpx;
+    color: #b8b8b8;
+    letter-spacing:3rpx;
+}
+.countdown{
+    font-size: 24rpx;
+    color: #004483;
+    text-align: center;
+}
+.confirm{
+    background-color: #e73131;
+    color: #fff;
+    font-size: 30rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    border-radius: 5px;
+}
+.payway{
+    height: 80rpx;
+    line-height: 80rpx;
+    color: #ccc;
+    text-align: center;
+    font-size: 30rpx;
+    margin-top: 60rpx;
+}
+label{
+    font-size: 30rpx;
+}
+.orderinput{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.5);
+}

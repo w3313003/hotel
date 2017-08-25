@@ -1,0 +1,30 @@
+<view class='wrap'>
+    <view class='prompt'>
+        <image class='success' src='/static/img/success.png'></image>
+        <view class='text'>恭喜你!</view>
+        <view class='text'>房间预订成功!</view>
+    </view>
+    <view class='msg'>
+        <view class='row'>
+            <view class='title'>订单号</view>
+            <view class='item'>12548524251</view>
+        </view>
+        <view class='row'>
+            <view class='title'>预定日期</view>
+            <view class='item time'>
+                <view>2001-05-05</view>
+                <view>至</view>
+                <view>2005-05-05</view>
+            </view>
+        </view>
+        <view class='row'>
+            <view class='title'>预定房间</view>
+            <view class='item'>豪华大床房(304),豪华标准房(406)</view>
+        </view>
+        <view class='row'>
+            <view class='title'>支付金额</view>
+            <view class='price'>666</view>
+        </view>
+    </view>
+    <view class='confirm' bindtap='test'>确定</view>
+</view>

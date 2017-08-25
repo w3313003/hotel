@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",    
+    "pages/regiset/regiset",      
+    "pages/order/order",         
+    "pages/success/success",  
+    "pages/login/login",    
+    "pages/roommessage/roommessage",          
+    "pages/rList/rList",     
+    "pages/ordercenter/ordercenter",        
+    "pages/rating/rating",                    
+    "pages/contact/contact",     
+    "pages/map/map",         
+    "pages/member/member",         
+    "pages/reset/reset",
+    "pages/membercenter/membercenter"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color":"#1a1a1a",
+    "selectedColor":"#004483",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "预定",
+      "iconPath":"./static/img/index.png",
+      "selectedIconPath":"./static/img/activeindex.png"
+    }, {
+      "pagePath": "pages/membercenter/membercenter",
+      "text": "会员",
+      "iconPath":"./static/img/user.png",
+      "selectedIconPath":"./static/img/activeuser.png"
+    }]
+  }
+}

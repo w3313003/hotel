@@ -1,0 +1,23 @@
+<view class='rwrap'>
+    <view class='rItem' wx:for='{{rList}}' wx:key='{{index}}'>
+        <view class='row1'>
+            <view class='userid'>{{item.id}}</view>
+            <view class='time'>{{item.time}}</view>
+        </view>
+        <view class='row2'>
+            <image class='star' src='/static/img/a-star.png' wx:for='{{item.score}}' wx:key='{{index}}' ></image>
+        </view>
+        <view class='content'>
+            {{item.content}}
+        </view>
+        <view class='seller' wx:if="{{item.sellercontent != null}}">
+            <view class='row3'>
+                <view class='userid'>商家回复</view>
+                <view class='time'>{{item.sellertime}}</view>
+            </view>
+            <view class='content'>
+                {{item.sellercontent}}
+            </view>
+        </view>
+    </view>
+</view>

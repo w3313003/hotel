@@ -1,0 +1,49 @@
+.rwrap {
+    box-sizing: border-box;
+    padding: 30rpx;
+}
+
+.rItem {
+    padding: 30rpx 0;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24rpx;
+}
+
+.userid {
+    font-size: 28rpx;
+    color: #004483;
+}
+
+.time {
+    color: #666;
+}
+
+.row2 {
+    padding-left: 30rpx;
+}
+
+.star {
+    width: 28rpx;
+    height: 28rpx;
+    padding: 0 4rpx;
+}
+
+.content {
+    font-size: 24rpx;
+}
+
+.seller {
+    padding: 0 30rpx;
+    font-size: 24rpx;
+}
+
+.row3 {
+    display: flex;
+    justify-content: space-between;
+    height: 60rpx;
+    line-height: 60rpx;
+}

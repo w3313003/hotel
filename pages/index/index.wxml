@@ -1,0 +1,88 @@
+<!--index.wxml-->
+<view>
+  <view class='mask' wx:if="{{maskshow}}" bindtap="closemask">
+    <view class='roomtypeshow' catchtap='stoppropagation'>
+      <view wx:for="{{roomtype}}" wx:key='{{item.id}}'>
+        <view class='roomwrap'>
+          <view class='roomname' bindtap='roomDetail' data-roomnav='{{item.roomnav}}' >{{item.roomnav}}</view>
+          <view class='roomprice'>￥{{item.roomprice}}</view>
+          <view class='control'>
+            <view class='less' wx:if="{{item.sum>0}}" catchtap='less' data-roomnav="{{item.roomnav}}">
+              <image src="{{lessimg}}" />
+            </view>
+            <view class='count' wx:if="{{item.sum>0}}">{{item.sum}}</view>
+            <view class='addbtn' catchtap='add' data-roomnav="{{item.roomnav}}" wx:if="{{item.maxroom>0}}">
+              <image src="{{addimg}}" />
+            </view>
+            <view class='d-addbtn' wx:else>
+              <image src="{{daddimg}}" />
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='indexbg'>
+    <image src="{{src}}" />
+  </view>
+  <text class='title' bindtap='login'>住维多利亚,享美好时光</text>
+  <view class='index-content'>
+    <view class='row1'>
+      <view>
+        <view class='curr-time'>入住时间</view>
+        <view class="section">
+          <view class="section__title"></view>
+          <picker mode="date" value="{{date}}" start="{{date1}}" end="2039-09-01" bindchange="bindDateChange">
+            <view class="picker">
+              {{date}}
+            </view>
+          </picker>
+        </view>
+      </view>
+      <view>
+        <view class='curr-time'>离店时间</view>
+        <view class="section">
+          <view class="section__title"></view>
+          <picker mode="date" value="{{nextdate}}" start="{{nextdate2}}" end="2039-09-01" bindchange="nextDateChange">
+            <view class="picker">
+              {{nextdate}}
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class='days'>共{{days}}天</view>
+    <view class='roomtype' catchtap="rtshow">
+      <view class='roomtitle'>
+        房间类型
+      </view>
+      <view class='roomcontent'>
+        <!-- <view wx:for='{{ordermessage}}' wx:key="{{index}}">
+          {{item}}
+        </view> -->
+        {{orderStr}}
+      </view>
+    </view>
+    <view class='roomtype'>
+      <view class='roomtitle'>
+        房间总数
+      </view>
+      <view class='totalsum'>
+        {{totalsum}}间
+      </view>
+    </view>
+    <view class='totalprice'>
+      <view class='p-title'>
+        房费总计
+      </view>
+      <view class='p-price'>
+        {{totalprice * days}}元
+      </view>
+    </view>
+    <view class='confrim-wrap'>
+      <view class='confrim-btn' bindtap='getorder'>
+        立即预定
+      </view>
+    </view>
+  </view>
+</view>

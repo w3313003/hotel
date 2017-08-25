@@ -1,0 +1,38 @@
+<view>
+    <view class='indexbg'>
+        <view class='l-mask'></view>
+        <image src='../.././static/img/bg.png' />
+    </view>
+    <view class='logo'>
+        <image src='../.././static/img/logo.png' />
+        <view class="hotelname">维多利亚酒店</view>
+        <view class='en-name'>VICTORIA★★★★HOTEL</view>
+    </view>
+    <view class='l-input phone'>
+        <view class='l-i-wrap'>
+        <image src='../.././static/img/phone.png'></image>
+        </view>
+        <text class='l-title'>手机号</text>
+        <input type='number' value="{{phone}}" placeholder='请输入手机号码' bindblur='savephone' 
+        maxlength='11'/>
+    </view>
+    <view class='l-input'>
+        <view class='l-i-wrap'>
+        <image style='width:27rpx' src='../.././static/img/psw.png'></image>
+        </view>
+        <text class='l-title'>密码</text>
+        <input type='text' value="{{psw}}" password='true' placeholder='请输入密码'
+        bindblur='savepsw'/>
+    </view>
+    <view class='regiest'>
+        <navigator url="/pages/reset/reset" hover-class="navigator-hover">
+        忘记密码?
+        </navigator>
+    </view>
+    <view class='btn loginbtn' bindtap='login'>登录</view>
+    <view class='btn regiestbtn'>
+        <navigator url="/pages/regiset/regiset" hover-class="navigator-hover">
+        注册
+        </navigator>
+    </view>
+</view>

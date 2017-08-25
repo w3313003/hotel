@@ -1,0 +1,71 @@
+<view>
+    <view class='navbar'>
+        <view wx:for='{{roomtype}}' wx:key='{{index}}' class='{{item.isclick == true ? "active": "n" }}' data-roomnav="{{item.roomnav}}"
+            bindtap='descToggle'>
+            {{item.roomnav}}
+        </view>
+    </view>
+    <view class='content-wrap' animation="{{animate}}">
+        <swiper class='banner' indicator-dots='{{tips}}'>
+            <swiper-item wx:for='{{pic}}' wx:key='{{index}}'>
+                <image src='{{item}}'></image>
+            </swiper-item>
+        </swiper>
+        <view class='room-desc'>
+            <view>
+                <image src='/static/img/room.png' style="width:34rpx;height:28rpx;"></image>
+                <text class='room-detail'>客房设施详情</text>
+            </view>
+            <view class='roomdescription'>楼层:{{floor}}层；/ 面积：{{area}}m²；/ 床型：{{bed}};</view>
+            <view class='roomdescription'>最大可住人数：{{number}}人;/ 可否加床：
+                <text wx:if='{{extrabed==true}}'>可加床</text>
+                <text wx:else>不可加床</text>
+            </view>
+            <view class='roomdescription'>有无窗：
+                <text wx:if='{{window==true}}'>有窗；</text>
+                <text wx:else>无窗;</text>
+                / 卫浴：
+                <text wx:if='{{window==true}}'>独立卫浴;</text>
+                <text wx:else>公共卫浴</text>/ 宽带：
+                <text wx:if='{{inter==true}}'>免费;</text>
+                <text wx:else>无</text>/ wifi:
+                <text wx:if='{{wifi==true}}'>有</text>
+                <text wx:else>无</text>
+            </view>
+        </view>
+        <image class='info' src='/static/img/roommsg.png'></image>
+        <view class='price'>
+            <view class='priceicon priceicon1'>
+                <view class='iconwrap'>
+                    <image class='icon' src='/static/img/price.png'></image>
+                </view>
+                <view class='title'>房间价格</view>
+                <view class='room-price'>￥{{price}}</view>
+            </view>
+        </view>
+        <view class='rating'>
+            <view class='priceicon'>
+                <view class='iconwrap'>
+                    <image class='icon' src='/static/img/contact.png'></image>
+                </view>
+                <view class='title'>评价列表</view>
+            </view>
+            <view class='rItem' wx:if='{{index===1}}' wx:for='{{rList}}' wx:key='{{index}}'>
+                <view class='row1'>
+                    <view class='userid'>{{item.id}}</view>
+                    <view class='time'>{{item.time}}</view>
+                </view>
+                <view class='row2'>
+                    <image class='star' src='/static/img/a-star.png' wx:for='{{item.score}}' wx:key='{{index}}' data-item='{{item}}' bindtap='test'></image>
+                </view>
+                <view class='content'>
+                    {{item.content}}
+                </view>
+            </view>
+        </view>
+        <view class='moreRting'>
+            查看更多评论
+        </view>
+    </view>
+
+</view>

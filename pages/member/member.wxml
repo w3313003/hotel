@@ -1,0 +1,12 @@
+<view class='order-wrap'>
+    <view wx:for='{{info}}' wx:key='{{index}}' class='orderList {{index>4?"bordernone":""}}' >
+       <view class='orderkey'>{{item.type}}
+        </view>
+        <view class='ordervalue'>
+            {{item.value}}
+        </view>
+    </view>
+    <view class='confirm btn'>
+        确定
+    </view>
+</view>

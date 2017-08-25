@@ -1,0 +1,63 @@
+.ordernav{
+    width: 100%;
+    height: 80rpx;
+    display: flex;
+    font-size: 28rpx;
+}
+.nav{
+    flex: 0 0 20%;
+    text-align: center;
+    line-height: 80rpx;
+    border-bottom: 1rpx solid #ccc;
+    transition: border 0.5s;
+}
+.ordernav .active{
+    color: #004483;
+    font-weight: bold;
+    border-bottom: 1rpx solid #004483;
+}
+.order-cont{
+    width: 690rpx;
+    margin: 0 auto;
+    font-size: 28rpx;
+}
+.order-item{
+    padding: 20rpx 30rpx;
+    border-bottom:1rpx solid #ccc;
+    position: relative;
+}
+.id{
+    color: #004483;
+}
+.order-item > view{
+    display: flex;
+    padding: 10rpx 0;
+}
+.ordertitle{
+    flex: 0 0 160rpx;
+}
+.orderitem{
+    flex: 1;
+    overflow-x: scroll;
+    display: flex;
+    white-space: nowrap;
+}
+.ordertime{
+    justify-content: space-between;
+}
+.orderprice,.state{
+    color: #fe2121;
+}
+.order-item .tips{
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 10rpx;
+    background-color: #fe2121;
+    color: #fff;
+    width: 120rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    text-align: center;
+    border-radius: 15rpx;
+}

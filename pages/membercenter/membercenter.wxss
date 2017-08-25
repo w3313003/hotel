@@ -1,0 +1,91 @@
+.userwrap {
+    width: 632rpx;
+    margin: 0 auto;
+}
+
+.slogo {
+    width: 350rpx;
+    height: 286rpx;
+    display: block;
+    margin: 30rpx auto 0;
+}
+
+.name {
+    margin: 50rpx 0 20rpx 0;
+}
+
+.info {
+    text-align: center;
+    font-size: 32rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    color: #333;
+}
+
+.topwrap {
+    padding-bottom: 30rpx;
+    border-bottom: 1rpx solid #ccc;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 20rpx;
+}
+
+.u-block {
+    flex: 0 0 280rpx;
+    height: 280rpx;
+    background-color: #333;
+    border-radius: 5px;
+    margin-bottom: 20rpx;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.u-block view {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 5rpx;
+}
+
+.u-block image {
+    width: 120rpx;
+    height: 120rpx;
+    display: block;
+    margin: 0 auto;
+}
+
+.m-center {
+    background-color: #d47314;
+}
+
+.m-center image {
+    width: 150rpx;
+    height: 150rpx;
+}
+
+.o-center {
+    background-color: #da3997;
+}
+
+.location {
+    background-color: #1d77ac;
+}
+
+.Contact {
+    background-color: #4fac37;
+}
+.navi{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20rpx 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

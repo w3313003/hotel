@@ -1,0 +1,135 @@
+.l-mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255,.5);
+}
+.logo{
+    margin-top: 40rpx;
+}
+.logo image{
+    width: 203rpx;
+    height: 203rpx;
+    display: block;
+    margin: 0 auto;
+}
+.hotelname{
+    color: #004483;
+    font-size: 70rpx;
+    font-weight: bold;
+    text-align: center;
+    height: 100rpx;
+    line-height: 100rpx;
+    margin-top: 20rpx;
+}
+.en-name{
+    color: #004483;
+    font-size: 25rpx;
+    text-align: center;
+    position: relative;
+}
+.en-name::after,.en-name::before{
+    /* position: absolute; */
+    content: '';
+    display: inline-block;
+    width: 70rpx;
+    height: 1px;
+    background-color: #004483;
+    vertical-align: middle;
+    /* top: 50%;
+    transform: translateY(-50%); */
+}
+.l-input{
+    display: flex;
+    width: 632rpx;
+    margin: 0 auto;
+    border-bottom: 1rpx solid #004483;
+    justify-content: space-around;
+    padding: 20rpx 0;
+    font-size: 32rpx;
+    color: #004483;
+    align-items: center;
+}
+.l-input image{
+    width: 19rpx;
+    height: 32rpx;
+}
+.l-title{
+    width:130rpx;
+    text-align-last:justify;
+    margin: 0 15rpx;
+}
+.l-i-wrap{
+    width:40rpx;
+}
+.l-input input{
+    flex: 1;
+}
+.phone{
+    margin-top: 70rpx;
+}
+.code{
+    border:none;
+    justify-content: space-between;
+}
+.checkcode{
+    flex:0 0 395rpx;
+    display: flex;
+    border-bottom: 1rpx solid #004483;
+}
+.getcode{
+    flex: 0 0 213rpx;
+    background-color: #004483;
+    align-self: center;
+    color:#fff;
+    text-align: center;
+    border-radius: 5px;
+    font-size:25rpx;
+    height: 53rpx;
+    line-height: 53rpx;
+}
+.d-getcode{
+    background-color: #ccc;
+    color: #004483;
+}
+.regiest{
+    width: 632rpx;
+    color: #e73131;
+    font-size: 24rpx;
+    font-weight: bold;
+    margin: 15rpx auto;
+}
+.btn{
+    width: 600rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-radius: 5px;
+    color: #fff;
+    font-size:  32rpx;
+    font-weight: bold;
+    text-align: center;
+    margin: 20rpx auto;
+}
+.loginbtn{
+    background-color: #004483;
+    margin-top: 60rpx;
+}
+.regiestbtn{
+    color:#004483;
+}
+.regiset{
+    width: 632rpx;
+    margin: 40rpx auto;
+    height: 80rpx;
+    background-color: #004483;
+    line-height: 80rpx;
+    text-align:center;
+    border-radius: 5px;
+    color: #fff;
+}
+.regiset-tap{
+    background-color: #ccc;
+    color: #004483;
+}

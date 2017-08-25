@@ -1,0 +1,111 @@
+@import '../rList/rList.wxss';
+.navbar {
+    display: flex;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+.navbar view {
+    font-size: 32rpx;
+    float: left;
+    color: #000;
+    width: 153rpx;
+    padding: 15rpx 30rpx;
+}
+
+.banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner image {
+    width: 100%;
+    height: 100%;
+}
+
+.room-desc {
+    width: 632rpx;
+    margin: 0 auto;
+    padding: 30rpx 0;
+}
+
+.room-detail {
+    font-size: 28rpx;
+    color: #004483;
+    padding-left: 5rpx;
+    letter-spacing: 3rpx;
+}
+
+.roomdescription {
+    font-size: 25rpx;
+    color: #666;
+}
+
+.navbar view.active {
+    color: #004483;
+    font-weight: 400;
+    border-bottom: #004483 1rpx solid;
+}
+
+.content-wrap {
+    margin-top: 30rpx;
+}
+
+.info {
+    width: 630rpx;
+    height: 370rpx;
+    margin: 0 auto;
+    display: block;
+}
+
+.price {
+    width: 632rpx;
+    margin: 0 auto;
+}
+
+.priceicon {
+    display: flex;
+    align-items: center;
+    font-size: 30rpx;
+}
+.priceicon1{
+    padding-bottom: 30rpx;
+    border-bottom: 1rpx dashed #ccc;
+}
+
+.iconwrap {
+    flex: 0 0 50rpx;
+    align-self: center;
+}
+
+.icon {
+    width: 30rpx;
+    height: 30rpx;
+    display: block;
+}
+
+.title {
+    font-size: 30rpx;
+    color: #004483;
+    flex: 1;
+}
+
+.room-price {
+    color: #fe2121;
+    font-size: 32rpx;
+    padding-left: 55rpx;
+}
+
+.rating {
+    width: 632rpx;
+    margin: 0 auto;
+    padding: 20rpx 0;
+    border-bottom: 1rpx dashed #ccc;
+}
+.moreRting{
+    color: #d61616;
+    font-size: 30rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+}

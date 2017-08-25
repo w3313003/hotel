@@ -1,0 +1,27 @@
+.logo{
+    margin:40rpx 0 60rpx 0;
+}
+.slogo{
+    width: 350rpx;
+    height: 286rpx;
+    margin: 0 auto;
+    display: block;
+}
+.content{
+    width: 632rpx;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    font-size: 28rpx;
+    color: #333;
+    letter-spacing: 5rpx;
+}
+.text{
+    width: 300rpx;
+}
+.map{
+    width: 90%;
+    margin: 0 auto;
+    height: 40vh;
+}

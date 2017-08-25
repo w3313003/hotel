@@ -1,0 +1,37 @@
+<view class='wrap'>
+    <view class='msg'>
+        <view class='row'>
+            <view class='title'>订单号</view>
+            <view class='item id'>{{msg.ordernum}}</view>
+        </view>
+        <view class='row'>
+            <view class='title'>预定日期</view>
+            <view class='item time'>
+                <view>{{msg.roomtime}}</view>
+            </view>
+        </view>
+        <view class='row'>
+            <view class='title'>预定房间</view>
+            <view class='item'>{{msg.roomsum}}</view>
+        </view>
+        <view class='row'>
+            <view class='title'>支付金额</view>
+            <view class='price'>￥{{msg.roomprice}}</view>
+        </view>
+    </view>
+    <view class='content'>
+        <view class='c-row'>
+            <view class='title'>房间评分</view>
+            <view>
+                <image class='star' wx:for='{{ratingstar}}' src='{{item.isactive==true?"/static/img/a-star.png":"/static/img/star.png"}}'
+                    wx:key='{{index}}' bindtap='ratingstar' data-index='{{item.i}}'></image>
+            </view>
+        </view>
+        <view class='text-wrap'>
+            <textarea class='textarea' placeholder="请对我们的房间和服务做一个评价吧！您也可以表达一些小建议，感谢您的关心和支持！" bindblur='savecontent' />
+        </view>
+    </view>
+    <view class='confirm' bindtap='send'>
+        提交评价
+    </view>
+</view>

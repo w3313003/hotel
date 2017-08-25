@@ -1,0 +1,23 @@
+<view class='order-wrap'>
+    <!-- <view>
+        <label>入住人姓名</label>
+        <input class='orderinput' type='text' placeholder="请输入入住人姓名" confirm-type='next' 
+        bindblur='savename' />
+        <label>手机号码</label>
+        <input class='orderinput' value='{{empty}}' type='number' placeholder="请输入联系号码" bindblur='savephone' />
+    </view> -->
+    <view wx:for='{{ordermsg}}' wx:key='{{index}}' class='orderList {{index>4?"bordernone":""}}' >
+        <view class='orderkey'>{{item[0]}}
+        </view>
+        <view class='ordervalue {{index>4?"price":""}}'>
+            <text wx:if="{{index>4}}">￥</text>
+            {{item[1]}}
+            <text wx:if="{{index==2}}">天</text>
+            <text wx:if="{{index==4}}">间</text>
+        </view>
+    </view>
+    <view class='tips'>备注：该房间在您支付之前会为您预留30分钟，请尽快完成支付。</view>
+    <view class='countdown'>支付剩余时间 {{m}}分{{s}}秒</view>
+    <view class='payway' bindtap='test'>微信支付</view>
+    <view class='confirm' bindtap='pay' >立即支付</view>
+</view>

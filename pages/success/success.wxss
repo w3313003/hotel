@@ -1,0 +1,67 @@
+.wrap {
+    width: 633rpx;
+    margin: 0 auto;
+}
+
+.prompt {
+    padding-bottom: 40rpx;
+    border-bottom: 1rpx solid #ccc;
+}
+
+.success {
+    width: 260rpx;
+    height: 260rpx;
+    display: block;
+    margin: 40rpx auto;
+}
+
+.text {
+    text-align: center;
+    height: 50rpx;
+    line-height: 50rpx;
+    color: #e73131;
+    font-size: 32rpx;
+    font-weight: 400;
+}
+
+.msg {
+    padding: 25rpx 0 45rpx;
+    border-bottom: 1rpx solid #ccc;
+}
+
+.row {
+    display: flex;
+    font-size: 28rpx;
+    padding: 10rpx 0;
+}
+
+.title {
+    flex: 0 0 150rpx;
+    color: #004483;
+}
+
+.item {
+    flex: 1;
+    display: flex;
+    white-space: nowrap;
+    overflow-x: scroll;
+    color: #333;
+}
+
+.time {
+    justify-content: space-between;
+}
+
+.confirm {
+    background-color: #004483;
+    color: #fff;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 40rpx;
+    font-size: 30rpx;
+}
+.price{
+    color: #fe2121;
+}
